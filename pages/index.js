@@ -31,7 +31,7 @@ export default function Home() {
         {trigger}
       </button>
 
-      <p className="text-xl text-red-500 mt-10">
+      <p className="text-xl text-black mt-10">
         Paragraph styled using tailwind  ok maybe
       </p>
 
@@ -91,4 +91,4 @@ export default function Home() {
 
 const Child = ({ log }) => <Child2 log={log} />;
 
-const Child2 = ({ log }) => <button onClick={log}>Child log</button>;
+const Child2 = ({ log }) => <button onClick={log}>Child log counter</button>;
