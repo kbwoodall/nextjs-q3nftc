@@ -32,7 +32,7 @@ export default function Home() {
       </button>
 
       <p className="text-xl text-red-500 mt-10">
-        Paragraph styled using tailwind
+        Paragraph styled using tailwind  ok maybe
       </p>
 
       <main className={styles.main}>
