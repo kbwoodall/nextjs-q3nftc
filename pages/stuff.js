@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div className={styles.container}>
+    <div className=" flex bg-amber-200">
       <Head>
         <title>Create Next App</title>
       </Head>
@@ -44,8 +44,8 @@ export default function Home() {
         Paragraph styled using tailwind ok maybe
       </p>
 
-      <main className="text-xl text-black mt-10">
-        <p className="text-xl  bg-green-500 mt-10">
+      <main className="bg-amber-200">
+        <p className="bg-amber-200 text-xl  bg-green-500 mt-10">
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
