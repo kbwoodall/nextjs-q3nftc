@@ -40,21 +40,17 @@ export default function Home() {
         {trigger}
       </button>
 
-      <p className="text-xl text-black mt-10">
+      <p className="text-xl  bg-green-500 mt-10">
         Paragraph styled using tailwind ok maybe
       </p>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
+      <main className="text-xl text-black mt-10">
+        <p className="text-xl  bg-green-500 mt-10">
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <h1 className={styles.title}>
+        <h1 className="text-xl text-black mt-10">
           Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
