@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   const [trigger, setTrigger] = useState(new Date().toISOString());
@@ -34,6 +35,16 @@ export default function Home() {
       <p className="text-xl text-black mt-10">
         Paragraph styled using tailwind  ok maybe
       </p>
+
+      <ul>
+          <li>
+            <Link href="/">Home</Link>
+          </li>
+
+          <li>
+            <Link href="/stuff">Stuff</Link>
+          </li>
+        </ul>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
