@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div class="flex flex-col bg-green-200">
+    <div class="flex flex-col bg-green-200 pt-5">
       <Head>
         <title>Create Next App</title>
       </Head>
@@ -49,7 +49,7 @@ export default function Home() {
           Get started by editing {''}
           <code>pages/index.js</code>
         </p>
-         
+
         <p className="text-xl text-black mt-5 text-center">
           Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </p>
@@ -63,11 +63,13 @@ export default function Home() {
             <Link href="/stuff">Stuff</Link>
           </li>
         </ul>
-        <button className="text-xl text-black mt-5" onClick={fetchTodos}>Get Name</button>
-
+        <button className="text-xl text-black mt-5" onClick={fetchTodos}>
+          Get Name
+        </button>
       </div>
-       <div class="bg-green-200"></div>
-
+      <div>
+        <p class="bg-green-200 h-96"></p>
+      </div>
     </div>
   );
 }
