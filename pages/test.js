@@ -24,6 +24,24 @@ export default function Home() {
     settodos(data);
   };
 
+
+  const hdg = () => {
+    return (
+      <p className="bg-green-400 text-md font-bold pt-2 pb-4 w-64 pl-4">
+        Total Purchases by Customer
+      </p>
+    );
+  };
+  function Chdg() {
+    return (
+      <p className="bg-green-400 text-md font-bold pt-2 pb-4 w-64 pl-4">
+        Customers
+      </p>
+    );
+  }
+  
+
+
   return (
     <div class="flex flex-col bg-green-200 pt-5">
       <Head>
@@ -69,6 +87,8 @@ export default function Home() {
         <button className="text-xl text-black mt-5" onClick={fetchTodos}>
           Get Name
         </button>
+
+        <Chdg/>
         <p className="text-xl text-black mt-5 h-96"></p>
       </div>
     </div>

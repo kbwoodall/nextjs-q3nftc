@@ -44,6 +44,10 @@ export default function Home() {
           <li>
             <Link href="/stuff">Stuff</Link>
           </li>
+          <li>
+            <Link href="/test">Test</Link>
+          </li>
+
         </ul>
 
       <main className={styles.main}>
