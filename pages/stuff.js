@@ -25,7 +25,7 @@ export default function Home() {
   };
 
   return (
-    <div className=" flex bg-amber-200">
+    <div class="flex flex-col bg-green-200">
       <Head>
         <title>Create Next App</title>
       </Head>
@@ -40,21 +40,21 @@ export default function Home() {
         {trigger}
       </button>
 
-      <p className="text-xl  bg-green-500 mt-10">
+      <p class="text-xl bg-green-200 mt-5 text-center">
         Paragraph styled using tailwind ok maybe
       </p>
 
-      <main className="bg-amber-200">
-        <p className="bg-amber-200 text-xl  bg-green-500 mt-10">
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+      <div class="flex flex-col bg-green-200 text-center">
+        <p className="text-xl mt-5">
+          Get started by editing {''}
+          <code>pages/index.js</code>
+        </p>
+         
+        <p className="text-xl text-black mt-5 text-center">
+          Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
         </p>
 
-        <h1 className="text-xl text-black mt-10">
-          Welcome {todos.name} <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <ul>
+        <ul className="text-xl text-black mt-5 text-center">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -63,8 +63,11 @@ export default function Home() {
             <Link href="/stuff">Stuff</Link>
           </li>
         </ul>
-        <button onClick={fetchTodos}>Get Name</button>
-      </main>
+        <button className="text-xl text-black mt-5" onClick={fetchTodos}>Get Name</button>
+
+      </div>
+       <div class="bg-green-200"></div>
+
     </div>
   );
 }
