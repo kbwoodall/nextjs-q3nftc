@@ -66,9 +66,7 @@ export default function Home() {
         <button className="text-xl text-black mt-5" onClick={fetchTodos}>
           Get Name
         </button>
-      </div>
-      <div>
-        <p class="bg-green-200 h-96"></p>
+        <p className="text-xl text-black mt-5 h-96"></p>
       </div>
     </div>
   );
