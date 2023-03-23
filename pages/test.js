@@ -59,7 +59,7 @@ export default function Home() {
       </button>
 
       <p class="text-xl bg-green-200 mt-5 text-center">
-        Paragraph styled using tailwind ok maybe
+        Screen test.js 
       </p>
 
       <div class="flex flex-col bg-green-200 text-center">
@@ -83,9 +83,13 @@ export default function Home() {
           <li>
             <Link href="/test">Test</Link>
           </li>
+          <li>
+            <Link href="/api/hello">Hey</Link>
+          </li>
+
         </ul>
         <button className="text-xl text-black mt-5" onClick={fetchTodos}>
-          Get Name
+          Get Name from api
         </button>
 
         <Chdg/>
