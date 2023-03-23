@@ -3,6 +3,8 @@ import styles from '../styles/Home.module.css';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+//import useSWR from 'swr';
+
 export default function Home() {
   const [trigger, setTrigger] = useState(new Date().toISOString());
 
@@ -24,6 +26,16 @@ export default function Home() {
     settodos(data);
   };
 
+  /*
+  function Profile() {
+    const { data, error } = useSWR('/api/hello', fetch);
+  
+    if (error) return <div>failed to load</div>;
+    if (!data) return <div>loading...</div>;
+    return <div>hello {data.name}!</div>;
+  }
+  
+*/
 
   const hdg = () => {
     return (
@@ -39,8 +51,6 @@ export default function Home() {
       </p>
     );
   }
-  
-
 
   return (
     <div class="flex flex-col bg-green-200 pt-5">
@@ -58,9 +68,7 @@ export default function Home() {
         {trigger}
       </button>
 
-      <p class="text-xl bg-green-200 mt-5 text-center">
-        Screen test.js 
-      </p>
+      <p class="text-xl bg-green-200 mt-5 text-center">Screen test.js</p>
 
       <div class="flex flex-col bg-green-200 text-center">
         <p className="text-xl mt-5">
@@ -86,13 +94,12 @@ export default function Home() {
           <li>
             <Link href="/api/hello">Hey</Link>
           </li>
-
         </ul>
         <button className="text-xl text-black mt-5" onClick={fetchTodos}>
           Get Name from api
         </button>
 
-        <Chdg/>
+        <Chdg />
         <p className="text-xl text-black mt-5 h-96"></p>
       </div>
     </div>
