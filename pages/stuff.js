@@ -41,7 +41,7 @@ export default function Home() {
       </button>
 
       <p class="text-xl bg-green-200 mt-5 text-center">
-        Paragraph styled using tailwind ok maybe
+        Screen stuff.js 
       </p>
 
       <div class="flex flex-col bg-green-200 text-center">
