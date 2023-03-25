@@ -26,16 +26,21 @@ export default function Home() {
     settodos(data);
   };
 
-  /*
+  const Fetch1 = async () => {
+    const response = await fetch('/api/hello');
+    const data = await response.json();
+    settodos(data);
+
+    return <div>hello {todos.name}!</div>;
+  };
+
   function Profile() {
     const { data, error } = useSWR('/api/hello', fetch);
-  
+
     if (error) return <div>failed to load</div>;
     if (!data) return <div>loading...</div>;
     return <div>hello {data.name}!</div>;
   }
-  
-*/
 
   const hdg = () => {
     return (
@@ -92,7 +97,7 @@ export default function Home() {
             <Link href="/test">Test</Link>
           </li>
           <li>
-            <Link href="/api/hello">Hey</Link>
+            <Link href="/test">Test</Link>
           </li>
         </ul>
         <button className="text-xl text-black mt-5" onClick={fetchTodos}>
@@ -100,6 +105,9 @@ export default function Home() {
         </button>
 
         <Chdg />
+
+        
+
         <p className="text-xl text-black mt-5 h-96"></p>
       </div>
     </div>
