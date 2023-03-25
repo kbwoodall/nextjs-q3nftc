@@ -31,7 +31,7 @@ export default function Home() {
     const data = await response.json();
     settodos(data);
 
-    return <div>hello {todos.name}!</div>;
+    return <div>hello !</div>;
   };
 
   function Profile() {
@@ -106,7 +106,7 @@ export default function Home() {
 
         <Chdg />
 
-        
+        <Fetch1/>
 
         <p className="text-xl text-black mt-5 h-96"></p>
       </div>
