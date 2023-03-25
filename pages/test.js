@@ -20,13 +20,13 @@ export default function Home() {
 
   const [todos, settodos] = useState([]);
 
-  function fetchTodos ()  {
+  const fetchTodos = async () => {
     const response = await fetch('/api/hello');
     const data = await response.json();
     settodos(data);
   };
 
-  function Fetchmore () {
+  const Fetchmore = async () => {
     const response = await fetch('/api/hello');
     const data = await response.json();
     settodos(data);
