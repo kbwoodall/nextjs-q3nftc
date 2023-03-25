@@ -20,13 +20,13 @@ export default function Home() {
 
   const [todos, settodos] = useState([]);
 
-  const fetchTodos = async () => {
+  function fetchTodos ()  {
     const response = await fetch('/api/hello');
     const data = await response.json();
     settodos(data);
   };
 
-  const Fetch1 = async () => {
+  function Fetchmore () {
     const response = await fetch('/api/hello');
     const data = await response.json();
     settodos(data);
@@ -105,8 +105,6 @@ export default function Home() {
         </button>
 
         <Chdg />
-
-        <Fetch1/>
 
         <p className="text-xl text-black mt-5 h-96"></p>
       </div>
