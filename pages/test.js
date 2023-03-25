@@ -26,12 +26,12 @@ export default function Home() {
     settodos(data);
   };
 
-  const Fetchmore = async () => {
+  const  Fetchmore = async () => {
     const response = await fetch('/api/hello');
     const data = await response.json();
     settodos(data);
 
-    return <div>hello !</div>;
+    //return <div>hello !</div>;
   };
 
   function Profile() {
@@ -97,7 +97,7 @@ export default function Home() {
             <Link href="/test">Test</Link>
           </li>
           <li>
-            <Link href="/test">Test</Link>
+            <Link href="/test">Hey</Link>
           </li>
         </ul>
         <button className="text-xl text-black mt-5" onClick={fetchTodos}>
@@ -105,6 +105,8 @@ export default function Home() {
         </button>
 
         <Chdg />
+
+        <button className="bg-green-400 text-md font-bold pt-2 pb-4 w-64 pl-4 mt-5" onClick={Fetchmore}>Get todos</button>
 
         <p className="text-xl text-black mt-5 h-96"></p>
       </div>
